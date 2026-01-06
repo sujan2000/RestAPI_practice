@@ -3,7 +3,7 @@
 A small practice project for building and experimenting with REST APIs. This repository contains example endpoints, simple models, and seed data to help you learn how to build, run, and test RESTful services.
 
 ## Features
-- Minimal REST endpoints for common resources (users, posts)
+- Minimal REST endpoints for common resources (continent, country etc)
 - Sample seed data for local development
 - Tests (if present) to validate API behavior
 - Easy-to-follow setup for Python or Node-based stacks
@@ -12,7 +12,7 @@ A small practice project for building and experimenting with REST APIs. This rep
 
 ### Prerequisites
 - Git
-- Either Python 3.8+ (recommended) or Node.js 14+
+- Either Python 3.8+  or Node.js 14+ (recommended)
 - (Optional) PostgreSQL, SQLite, or another database if you want persistence
 
 ### Clone the repo
@@ -43,7 +43,7 @@ npm run dev
 ```
 
 ## Usage
-- By default the app will run on http://localhost:5000 or http://localhost:3000 depending on the stack.
+- By default, the app will run on http://localhost:5000 or http://localhost:3000, depending on the stack.
 - Example API calls:
 
 GET list of users
