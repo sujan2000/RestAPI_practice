@@ -1,0 +1,10 @@
+/node_modules
+/database/db.js
+/dist   
+.env
+*.log
+.DS_Store
+
+.vscode
+.idea
+*.iml
