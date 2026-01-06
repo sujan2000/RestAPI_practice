@@ -15,12 +15,12 @@ const server = http.createServer(async (req, res) => {
     const destinations = await getDataFromDB()
 
     if (urlObj.pathname === '/api' && req.method === 'GET') {
-        const filteredData = destinations
-        console.log(queryObj)
+        const filteredData = getDataByQueryParams(destinations, queryObj)
         sendJSONReasponse(res, 200, filteredData)
-
+        
     } else if (req.url.startsWith('/api/continents') && req.method === 'GET') {
-
+        
+        console.log(queryObj)
         const continent = req.url.split('/').pop()
         const filterContinent = getDataByPathParams(destinations, 'continent', continent)
         sendJSONReasponse(res, 200, filterContinent)
